@@ -36,7 +36,7 @@ mounted(){
       console.log('CONNECTED!')
     })
     this.socket.on('Eicounter', (Eizahl) => {
-      console.log(Eizahl)
+      //console.log(Eizahl)
       this.Eizahl = Eizahl
     })
 },

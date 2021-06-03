@@ -1,5 +1,5 @@
 <template>
-  <div>Hallo mein Name ist Marie
+  <div>
   </div>
 </template>
 

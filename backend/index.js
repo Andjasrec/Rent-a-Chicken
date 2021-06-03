@@ -22,9 +22,10 @@ mqttclient.on('connect', function () {
 mqttclient.on('message', function (topic, message) {
   //console.log(topic+": "+message.toString())
   if(topic === baseTopic) {
-        console.log(JSON.parse(message.toString())) 
-        let Eizahl = JSON.parse(message.toString())
+        //console.log(JSON.parse(message.toString())) 
+        Eizahl++
         //console.log(Eizahl)
+        
         io.emit("Eicounter", Eizahl)
       
   }
