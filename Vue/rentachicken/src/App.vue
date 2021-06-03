@@ -1,6 +1,7 @@
 <template>
   <div>
    <!--<Huhnseite></Huhnseite>-->
+   <Startseite></Startseite>
     {{Eizahl}}
    <!--<Test></Test>-->
     
@@ -11,6 +12,7 @@
 // import von anderen Seiten
 //import Test from './components/Test.vue'
 //import Huhnseite from './components/Huhnseite.vue'
+import Startseite from './components/Startseite.vue'
 
 //import von libraries
 import io from 'socket.io-client'
@@ -20,6 +22,7 @@ export default {
 components:{
   //Test,
   //Huhnseite,
+  Startseite
 },
 data(){
   return{
