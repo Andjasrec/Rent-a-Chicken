@@ -1,8 +1,10 @@
 <template>
   <div>
    <!--<Huhnseite></Huhnseite>-->
-   <Startseite></Startseite>
-    {{Eizahl}}
+   <Startseite
+   :Eizahl="this.Eizahl"
+   ></Startseite>
+  
    <!--<Test></Test>-->
     
   </div>

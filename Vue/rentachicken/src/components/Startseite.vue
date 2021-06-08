@@ -25,7 +25,9 @@
 
 <script>
 export default {
-
+  props:[
+    'Eizahl'
+  ]
 }
 </script>
 
