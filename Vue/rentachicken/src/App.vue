@@ -4,6 +4,7 @@
    <Startseite
    :Eizahl="this.Eizahl"
    ></Startseite>
+   <Images></Images>
   
    <!--<Test></Test>-->
     
@@ -15,6 +16,7 @@
 //import Test from './components/Test.vue'
 //import Huhnseite from './components/Huhnseite.vue'
 import Startseite from './components/Startseite.vue'
+import Images from './components/Images.vue'
 
 //import von libraries
 import io from 'socket.io-client'
@@ -24,7 +26,8 @@ export default {
 components:{
   //Test,
   //Huhnseite,
-  Startseite
+  Startseite,
+  Images
 },
 data(){
   return{
