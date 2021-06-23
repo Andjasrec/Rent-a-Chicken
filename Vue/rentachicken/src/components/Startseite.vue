@@ -5,7 +5,7 @@
   </div>
 <div class="Überschrift2">Deine Eier</div>
 <div class="kasten"></div>
-<div class="Eizahl">{{Eizahl}}</div>
+<div>{{Eizahl}}</div>
 <button class="button">ABHOLEN</button>
 <div class="Überschrift3">Hühner</div>
 <div class="Überschrift4">Live Cam</div>
@@ -14,10 +14,9 @@
 <div class="Abholbereit">Abholbereit</div>
 <div class="Woche">pro Woche</div>
 <div class="navigation"></div>
-<button class="home">Home</button>
-<button class="wissen">Wissen</button>
-<button class="wecker">Wecker</button>
-
+<div class="Home">Home</div>
+<hr>
+<hr>
 <button class="MeineHuehner">Meine Hühner</button>
 <button class="VermieteteHuehner">Vermietete Hühner</button>
 <button class="FreieHuehner">Freie Hühner</button>
@@ -25,7 +24,6 @@
 </template>
 
 <script>
-
 export default {
   props:[
     'Eizahl'
@@ -57,7 +55,7 @@ color: #E58F4D;
 position: absolute;
 left: 4.11%;
 right: 48.07%;
-top: 11.72%;
+top: 8.24%;
 bottom: 89.88%;
 
 font-style: normal;
@@ -81,31 +79,6 @@ border: 1px solid #4A7140;
 box-sizing: border-box;
 border-radius: 6px;
 }
-
-.Eizahl{
-position: absolute;
-width: 79px;
-height: 61px;
-left: calc(50% - 79px/2 - 0.5px);
-top: calc(50% - 61px/2 - 232.5px);
-
-font-family: Airbnb Cereal App;
-font-style: normal;
-font-weight: normal;
-font-size: 80px;
-line-height: 20px;
-/* or 25% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.15px;
-justify-content: center;
-
-/* orange1 */
-
-color: #E58F4D;
-}
-
 .button{
 position: absolute;
 width: 378px;
@@ -158,16 +131,14 @@ color: #E58F4D;
 }
 .kastenlive{
 position: absolute;
-width: 64px;
-height: 36px;
-left: 318px;
-top: 623px;
+left: 76.57%;
+right: 7.97%;
+top: 50.12%;
+bottom: 47.06%;
+
 
 background: #4A7140;
 border-radius: 3px;
-border: 0cm;
-
-
 
 font-style: normal;
 font-weight: normal;
@@ -201,7 +172,7 @@ position: absolute;
 width: 87px;
 height: 16px;
 left: 294px;
-top: 377px;
+top: 396px;
 text-align:left;
 padding: 0;
 
@@ -228,7 +199,7 @@ position: absolute;
 width: 133px;
 height: 17px;
 left: 135px;
-top: 377px;
+top: 396px;
 text-align:left;
 padding: 0;
 
@@ -255,7 +226,7 @@ position: absolute;
 width: 95px;
 height: 17px;
 left: 18px;
-top: 377px;
+top: 396px;
 text-align:left;
 padding: 0;
 
@@ -277,7 +248,7 @@ background-color: Transparent;
 }
 
 .Abholbereit{
-position: absolute;
+  position: absolute;
 width: 79px;
 height: 20px;
 left: 167px;
@@ -308,6 +279,15 @@ letter-spacing: 0.15px;
 white-space: nowrap;
 color: #434343;
 }
+hr{
+position: absolute;
+left: 90.58%;
+right: 4.35%;
+top: 7.25%;
+bottom: 92.75%;
+
+border: 1.5px solid #000000;
+}
 
 .navigation{
 position: absolute;
@@ -335,57 +315,6 @@ line-height: 20px;
 letter-spacing: 0.15px;
 
 color: #C4C4C4;
-
-background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
-}
-.wissen{
-position: absolute;
-left: 44.2%;
-right: 45.89%;
-top: 96.65%;
-bottom: 1.12%;
-
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 20px;
-
-
-letter-spacing: 0.15px;
-
-color: #C4C4C4;
-
-background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
-}
-.wecker{
-position: absolute;
-left: 78.74%;
-right: 10.63%;
-top: 96.65%;
-bottom: 1.12%;
-
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 20px;
-
-letter-spacing: 0.15px;
-
-color: #C4C4C4;
-
-background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden; 
 }
 
 </style>
