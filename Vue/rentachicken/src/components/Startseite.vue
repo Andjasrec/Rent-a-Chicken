@@ -25,11 +25,27 @@
 </template>
 
 <script>
+import io from 'socket.io-client'
 
 export default {
-  props:[
-    'Eizahl'
-  ]
+
+data(){
+  return{
+    socket: undefined,
+    Eizahl: undefined
+  }
+},
+mounted(){
+  this.socket = io('http://localhost:3333')
+  this.socket.on('connect', () => {
+      console.log('CONNECTED!')
+    })
+    this.socket.on('Eicounter', (Eizahl) => {
+      //console.log(Eizahl)
+      this.Eizahl = Eizahl
+    })
+},
+methods:{},
 }
 </script>
 
