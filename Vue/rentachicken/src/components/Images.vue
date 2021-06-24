@@ -1,8 +1,8 @@
 <template>
   <div>
-   <div><img src="@/assets/images/carla.jpeg" class="carla"></div>
-  <div><img src="@/assets/images/charlotte.jpeg" class="charlotte" ></div>
-  <div><img src="@/assets/images/frieda.jpeg" class="frieda"> </div>
+   <div><img src="@/assets/images/carla.jpg" class="carla"></div>
+  <div><img src="@/assets/images/charlotte.jpg" class="charlotte" ></div>
+  <div><img src="@/assets/images/frieda.jpg" class="frieda"> </div>
   </div>
 </template>
 

@@ -6,7 +6,7 @@
 <div class="Überschrift2">Deine Eier</div>
 <div class="kasten"></div>
 <div class="Eizahl">{{Eizahl}}</div>
-<button class="button">ABHOLEN</button>
+<button class="button" v-on:click="changeToA">ABHOLEN</button>
 <div class="Überschrift3">Hühner</div>
 <div class="Überschrift4">Live Cam</div>
 <button class="kastenlive">LIVE</button>
@@ -18,9 +18,16 @@
 <button class="wissen">Wissen</button>
 <button class="wecker">Wecker</button>
 
+
 <button class="MeineHuehner">Meine Hühner</button>
 <button class="VermieteteHuehner">Vermietete Hühner</button>
 <button class="FreieHuehner">Freie Hühner</button>
+  
+<img class= "carla" src="@/assets/images/carla.jpg" alt="">
+<img class= "frieda" src="@/assets/images/frieda.jpg" alt="">
+<img class= "charlotte" src="@/assets/images/charlotte.jpg" alt="">
+<img class= "egg" src="@/assets/images/chicken.png" alt="">
+ 
   </div>
 </template>
 
@@ -402,6 +409,49 @@ background-color: Transparent;
     border: none;
     cursor:pointer;
     overflow: hidden; 
+}
+
+.carla{
+position: absolute;
+width: 120px;
+height: 120px;
+left: calc(50% - 120px/2 - 129px);
+top: calc(50% - 120px/2 + 19px);
+
+
+border-radius: 3px;
+}
+
+.frieda{
+position: absolute;
+width: 120px;
+height: 120px;
+left: calc(50% - 120px/2 + 18px);
+top: calc(50% - 120px/2 + 19px);
+
+
+border-radius: 3px;
+}
+
+.charlotte{
+position: absolute;
+width: 120px;
+height: 120px;
+left: 312px;
+top: 407px;
+
+
+border-radius: 3px;
+}
+
+.egg{
+position: absolute;
+width: 24px;
+height: auto;
+left: 73.46px;
+top: 842px;
+
+/*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
 
 </style>
