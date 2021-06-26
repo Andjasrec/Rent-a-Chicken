@@ -6,7 +6,13 @@
 <div class="Überschrift2">Deine Eier</div>
 <div class="kasten"></div>
 <div class="Eizahl">{{Eizahl}}</div>
-<button class="button" v-on:click="changeToA">ABHOLEN</button>
+
+<b-button class="button" v-b-modal.modal-1>ABHOLEN</b-button>
+
+  <b-modal class="modal" id="modal-1" title="BootstrapVue">
+    <p class="my-4">Abholung</p>
+  </b-modal>
+
 <div class="Überschrift3">Hühner</div>
 <div class="Überschrift4">Live Cam</div>
 <button class="kastenlive">LIVE</button>
@@ -452,6 +458,17 @@ left: 73.46px;
 top: 842px;
 
 /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
+}
+
+.modal {
+  position: absolute;
+left: 4.11%;
+right: 4.59%;
+top: 33.93%;
+bottom: 38.5%;
+
+background: #FFFFFF;
+border-radius: 6px;
 }
 
 </style>
