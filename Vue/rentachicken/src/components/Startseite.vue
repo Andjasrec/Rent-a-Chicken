@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <div class="Überschrift">
     <div>Rent a Chicken</div>
   </div>
