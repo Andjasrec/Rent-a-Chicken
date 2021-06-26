@@ -27,5 +27,31 @@ components: {
 </script>
 
 <style>
+.col{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+h1 {
+color: #E58F4D;
+font-weight: 500;
+font-size: 24px;
+line-height: 31px;
+letter-spacing: 0.4px;
+}
+h2{
+  font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.4px;
+color: #E58F4D;
+}
 
 </style>

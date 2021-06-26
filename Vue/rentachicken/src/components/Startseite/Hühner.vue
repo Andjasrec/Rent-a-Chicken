@@ -15,10 +15,6 @@
         </b-row>
     </b-container>
     <carousel></carousel>
-
-
-
-
 </div>
   
   
@@ -32,6 +28,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.col{
+    margin-right: 32px;
+    margin-left:0cm;
+font-family: Airbnb Cereal App;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.4px;
+color: #4A7140;
+}
 
 </style>

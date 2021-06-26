@@ -1,7 +1,7 @@
 <template>
   <div>
     
-  <carousel-3d :disable3d="true" :space="365" :autoplay="true" :autoplay-timeout="5000">
+  <carousel-3d :disable3d="true" :space="150" :autoplay="true" :autoplay-timeout="5000" :width="120" :height="120">
     <slide :index="0">
      <figure>
        <figcaption>
@@ -42,7 +42,9 @@ export default {
 .figcaption{
   position: absolute;
 }
-.slide{
+.carousel-3d-slide{
   border-radius: 5px;
+  border-color:transparent;
+
 }
 </style>

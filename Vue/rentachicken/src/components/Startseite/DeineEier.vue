@@ -1,8 +1,8 @@
 <template>
   <div>
-      <div>
+      <h2>
           Deine Eier
-      </div>
+      </h2>
       <b-container class="border">
           <b-row>
               <b-col>
@@ -28,6 +28,7 @@
               </b-col>
           </b-row>
       </b-container>
+      <br>
       <b-button>
           Abholen
       </b-button>
@@ -56,23 +57,41 @@ mounted() {
 }
 </script>
 
-<style>
-.container{
-    border: 1px solid #4A7140;
-    box-sizing: border-box;
-    border-radius: 6px;
+<style scoped>
+.border{
+border: 1px solid #4A7140;
+box-sizing: border-box;
+border-radius: 6px;
 }
 .col{
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
-.row {
-    display: flex;
-    flex-wrap: nowrap;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.15px;
+color: #434343;
 }
+.btn{
+    
+  width:100%;
+  height: 50px;
+  left: 18px;
+  top: 276px;
 
+  background: #4a7140;
+  border-radius: 3px;
+  border: 0cm;
+
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  font-size: 18px;
+  line-height: 23px;
+
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 </style>
