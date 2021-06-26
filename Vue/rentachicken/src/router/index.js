@@ -4,6 +4,11 @@ import Startseite from '../components/Startseite.vue'
 import Slider from '../components/slider.vue'
 import Carousel from '../components/Carousel.vue'
 import Video from '../components/Video.vue'
+import DeineEier from '../components/Startseite/DeineEier.vue'
+import Huehner from '../components/Startseite/Hühner.vue'
+import LiveCam from'../components/Startseite/LiveCam.vue'
+import Start from '../components/Startseite/Startseite.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,6 +35,26 @@ const routes = [
     path: '/Video',
     name: 'Video',
     component: Video
+  },
+  {
+    path: '/DeineEier',
+    name: 'DeineEier',
+    component: DeineEier
+  },
+  {
+    path: '/Huehner',
+    name: 'Huehner',
+    component: Huehner
+  },
+  {
+    path: '/LiveCam',
+    name: 'LiveCam',
+    component: LiveCam
+  },
+  {
+    path: '/Start',
+    name: 'Start',
+    component: Start
   },
 ]
 
