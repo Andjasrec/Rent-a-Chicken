@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Startseite from '../components/Startseite.vue'
 import Slider from '../components/slider.vue'
 import Carousel from '../components/Carousel.vue'
+import Video from '../components/Video.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     path: '/Carousel',
     name: 'Carousel',
     component: Carousel
+  },
+  {
+    path: '/Video',
+    name: 'Video',
+    component: Video
   },
 ]
 

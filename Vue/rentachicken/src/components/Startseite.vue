@@ -33,8 +33,6 @@
 
 <script>
 import io from 'socket.io-client'
-import Vue from 'vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 export default {
 
