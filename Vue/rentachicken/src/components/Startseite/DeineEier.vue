@@ -28,7 +28,10 @@
           </b-row>
       </b-container>
       <br>
-      <b-button v-on:click="modalclick" ref="my-modal">
+      <b-button
+      v-on:click="modalclick" 
+      v-on:changeBackground="changeBackground"
+      ref="my-modal">
           Abholen
       </b-button>
       <modal v-if="modaldata" class="modal" :modaldata="modaldata" v-on:changemodal="updatemodal"></modal>
@@ -66,6 +69,9 @@ mounted() {
     updatemodal(){
       this.modaldata= undefined
     },
+    changeBackground(){
+      this.$emit('changeBackgroundcolor')
+    }
   }
 }
 </script>
@@ -77,6 +83,7 @@ box-sizing: border-box;
 border-radius: 6px;
 }
 .col{
+
 align-items: center;
 text-align: center;
 font-style: normal;

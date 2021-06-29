@@ -9,4 +9,7 @@
 
 
 <style>
+body{
+font-family: Airbnb Cereal App;
+}
 </style>

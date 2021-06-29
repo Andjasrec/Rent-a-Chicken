@@ -1,5 +1,5 @@
 <template>
-  <div class="backgrundcolor">
+  <div class="backgroundcolor">
   <h1>Rent a Chicken</h1>
   <div class= caption>Per Live Cam kannst Du Dein Huhn kennenlernen und erleben</div>
   <img src="@/assets/images/illutyp.png"/>
@@ -12,8 +12,9 @@
 </script>
 
 <style scoped>
-body {
-    background-color:#E58F4D;
+.backgroundcolor{
+  background-color:#E58F4D;
+  height: 100vh;
 }
 h1 {
 position: absolute;

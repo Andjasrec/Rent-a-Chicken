@@ -1,8 +1,11 @@
 <template>
+<div id="id1" class="transparentdiv">
   <div>
       <h1>Rent a Chicken</h1>
       <div>
-          <DeineEier></DeineEier>  
+          <DeineEier
+          v-on:changeBackgroundcolor="updateColor(event)"
+          ></DeineEier>  
       </div> 
       <div>
         <Hühner></Hühner>
@@ -14,6 +17,7 @@
   <navi></navi>
 </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -27,7 +31,11 @@ components: {
     Hühner,
     LiveCam,
     Navi
-}
+},
+methods: {
+  updateColor: function(){
+    document.getElementById('id1')
+}}
 }
 
 </script>
@@ -67,5 +75,9 @@ line-height: 23px;
 letter-spacing: 0.4px;
 color: #E58F4D;
 }
-
+.transparentdiv{
+  visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
 </style>

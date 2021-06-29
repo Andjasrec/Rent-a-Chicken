@@ -1,11 +1,20 @@
 <template>
 <!-- Make a div wrapped slider,set height and width -->
- <div style="width:100%;margin:20px auto;height:400px">
-      <!-- Using the slider component -->
+ <div style="width:100%;height:100vh">
       <slider ref="slider" :options="options">
-          <!-- slideritem wrapped package with the components you need -->
-          <slideritem v-for="(item,index) in someList" :key="index" :style="item.style">{{item.html}}</slideritem>
-          <!-- Customizable loading -->
+          <slideritem>
+            <eins></eins>
+          </slideritem>
+          <slideritem>
+            <zwei></zwei>
+          </slideritem>
+          <slideritem>
+            <drei></drei>
+          </slideritem>
+          <slideritem>
+            <vier></vier>
+          </slideritem>
+
           <div slot="loading">loading...</div>
       </slider>
  </div>
@@ -13,31 +22,15 @@
 <script>
 // import slider components
 import { slider, slideritem } from 'vue-concise-slider'
+import eins from '../components/Indruction/1.vue'
+import zwei from '../components/Indruction/2.vue'
+import drei from '../components/Indruction/3.vue'
+import vier from '../components/Indruction/4.vue'
+
 export default {
    el: '#app',
    data () {
       return {
-        //data list [array]
-        someList:[
-          {
-            html: 'slide1',
-            style: {
-              'background': '#1bbc9b'
-            }
-          },
-          {
-            html: 'slide2',
-            style: {
-              'background': '#4bbfc3'
-            }
-          },
-          {
-            html: 'slide3',
-            style: {
-              'background': '#7baabe'
-            }
-          }
-        ],
         //Slider configuration [obj]
         options: {
           currentPage: 0
@@ -46,7 +39,17 @@ export default {
     },
     components: {
       slider,
-      slideritem
+      slideritem,
+      eins,
+      zwei,
+      drei,
+      vier,
     }
 }
 </script>
+
+<style scoped>
+.slider-item{
+    background-color:#E58F4D;
+}
+</style>
