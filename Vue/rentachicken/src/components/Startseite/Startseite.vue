@@ -1,6 +1,6 @@
 <template>
-<div id="id1" class="transparentdiv">
-  <div>
+<div id="id1">
+  <div class="nix">
       <h1>Rent a Chicken</h1>
       <div>
           <DeineEier
@@ -13,10 +13,10 @@
 <div>
     <LiveCam></LiveCam>
 </div>
-<div>
+  </div>
+  <div>
   <navi></navi>
 </div>
-  </div>
 </div>
 </template>
 
@@ -34,7 +34,7 @@ components: {
 },
 methods: {
   updateColor: function(){
-    document.getElementById('id1')
+    document.getElementById('id1').style="blue";
 }}
 }
 
@@ -42,10 +42,7 @@ methods: {
 
 <style>
 body{
-  margin-top: 23px;
-  margin-left: 18px;
-  margin-right: 18px;
-
+  margin: 0;
 }
 .col{
     display: block;
@@ -76,8 +73,13 @@ letter-spacing: 0.4px;
 color: #E58F4D;
 }
 .transparentdiv{
-  visibility: hidden;
+  visibility: none;
     position: absolute;
     top: -9999px;
+}
+.nix{
+    margin-top: 23px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 </style>

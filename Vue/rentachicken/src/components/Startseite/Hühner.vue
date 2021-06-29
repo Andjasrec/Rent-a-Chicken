@@ -6,10 +6,10 @@
             <b-col>
                 Meine Hühner
             </b-col>
-            <b-col>
+            <b-col class="nicht">
                 Vermietete Hühner
             </b-col>
-            <b-col>
+            <b-col class="nicht">
                 Freie Hühner
             </b-col>
         </b-row>
@@ -44,5 +44,7 @@ line-height: 16px;
 letter-spacing: 0.4px;
 color: #4A7140;
 }
-
+.nicht{
+    color: #C4C4C4;
+}
 </style>

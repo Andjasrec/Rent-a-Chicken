@@ -11,14 +11,13 @@ import eins from '../components/Indruction/1.vue'
 import zwei from '../components/Indruction/2.vue'
 import drei from '../components/Indruction/3.vue'
 import vier from '../components/Indruction/4.vue'
-import slider2 from '../components/slider2.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: '/Start'
+    redirect: '/slider'
   },
   {
     path: '/Slider',
@@ -75,11 +74,6 @@ const routes = [
     path: '/4',
     name: '4',
     component: vier,
-  },
-  {
-    path: '/slider2',
-    name: 'slider2',
-    component: slider2,
   },
 ]
 

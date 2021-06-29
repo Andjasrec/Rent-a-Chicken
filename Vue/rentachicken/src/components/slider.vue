@@ -1,6 +1,6 @@
 <template>
 <!-- Make a div wrapped slider,set height and width -->
- <div style="width:100%;height:100vh">
+ <div class="sliderstyle">
       <slider ref="slider" :options="options">
           <slideritem>
             <eins></eins>
@@ -28,12 +28,11 @@ import drei from '../components/Indruction/3.vue'
 import vier from '../components/Indruction/4.vue'
 
 export default {
-   el: '#app',
    data () {
       return {
         //Slider configuration [obj]
         options: {
-          currentPage: 0
+          currentPage: 0,
         }
       }
     },
@@ -51,5 +50,12 @@ export default {
 <style scoped>
 .slider-item{
     background-color:#E58F4D;
+}
+.sliderstyle{
+width:100vw;
+height:100vh;
+}
+.slider-container{
+  white-space: normal;
 }
 </style>

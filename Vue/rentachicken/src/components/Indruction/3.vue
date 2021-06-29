@@ -1,48 +1,55 @@
 <template>
-  <div class="backgroundcolor">
-  <h1>Rent a Chicken</h1>
-  <div class= caption>Erfahre Neues und lerne wissenswertes rund um Hühner</div>
-  <img src="@/assets/images/illutyp.png"/>
-  </div>
-
+<div>
+<b-container>
+  <b-col>
+    <b-row>
+      <h1> Willkommen bei Rent a Chicken</h1>
+    </b-row>
+  </b-col>
+  <b-col>
+    <b-row>
+      <img src="@/assets/images/illuwissen.png"/>
+    </b-row>
+  </b-col>
+  <b-col>
+    <b-row>
+      <h2>Erfahre Neues und lerne wissenswertes rund um Hühner</h2>
+    </b-row>
+  </b-col>
+</b-container>
+</div>
 </template>
 
 <script>
 
 </script>
-
 <style scoped>
-.backgroundcolor{
-  background-color:#E58F4D;
-  height: 100vh;
-}
-h1 {
-position: absolute;
-left: 3.86%;
-right: 31.64%;
-top: 12.17%;
-bottom: 78.01%;
 
-font-family: Airbnb Cereal App;
-font-style: normal;
+h1 {
+  font-style: normal;
 font-weight: 500;
 font-size: 34px;
 line-height: 44px;
-letter-spacing: 0.15px;
+letter-spacing: 0.4px;
 
 color: #FFFFFF;
-
+width: 270px;
+height: 88px;
+margin-top: 0;
 }
-.caption{
-position: absolute;
-left: 21.01%;
-right: 21.01%;
-top: 66.96%;
-bottom: 18.97%;
 
-font-family: Airbnb Cereal App;
-font-style: normal;
-font-weight: normal;
+img {
+  width: 303px;
+height: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+h2{
+  width: 303px;
+height: 48px;
+  font-style: normal;
+font-weight: 500;
 font-size: 14px;
 line-height: 24px;
 /* or 171% */
@@ -51,8 +58,5 @@ text-align: center;
 letter-spacing: 0.15px;
 
 color: #FFFFFF;
-
-
 }
-
 </style>

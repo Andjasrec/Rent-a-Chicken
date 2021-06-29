@@ -4,7 +4,7 @@
           Deine Eier
       </h2>
       <b-container class="border">
-          <b-row>
+          <b-row class="abstand">
               <b-col>
                   Heute
               </b-col>
@@ -144,5 +144,8 @@ width: 79px;
 height: 61px;
 margin-bottom: 11px;
 margin-top:11px;
+}
+.abstand{
+  margin-top: 14px;
 }
 </style>

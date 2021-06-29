@@ -2,9 +2,15 @@
   <div class="test">
       <b-container>
           <b-row>
-              <b-col>hi</b-col>
-              <b-col>hi</b-col>
-              <b-col>hi</b-col>
+              <b-col>
+                  <img src="./../../assets/images/huhn.svg" alt="">
+              </b-col>
+              <b-col>
+                  <img src="./../../assets/images/wissen.svg" alt="">
+              </b-col>
+              <b-col>
+                  <img src="./../../assets/images/wecker.svg" alt="">
+              </b-col>
           </b-row>
           <b-row>
               <b-col>Home</b-col>
@@ -24,9 +30,10 @@ export default {
 <style scoped>
 .container{
     z-index: 1;
-    position: sticky;
     bottom:0;
+    margin: none;
 }
+
 .col{
 background: #F9F8F6;   
     align-items: center;
@@ -36,11 +43,17 @@ font-weight: normal;
 font-size: 12px;
 line-height: 20px;
 /* identical to box height, or 167% */
-
 letter-spacing: 0.15px;
-
 color: #C4C4C4;
-
+}
+.test {
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+img{
+    margin-top: 11px;
 }
 
 </style>
