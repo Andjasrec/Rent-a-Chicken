@@ -15,6 +15,7 @@
 
 .backgroundcolor{
   background-color:#E58F4D;
+  height: 100vh;
 }
 
 h1 {
