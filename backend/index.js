@@ -8,7 +8,7 @@ const port = process.env.PORT || 3333;
 const cors = require('cors');
 // Variablen
 baseTopic = "/RentaChicken/Eicounter"
-Eizahl = 1
+Eizahl = 0
 
 mqttclient.on('connect', function () {
     mqttclient.subscribe('/RentaChicken/Eicounter', function (err) {
@@ -18,6 +18,19 @@ mqttclient.on('connect', function () {
   })
 })
 
+io.on('connection', function (socket) {
+  console.log("Connected to Client: " + socket.id);
+
+  socket.on("eierabgeholt",(message) => {
+    Eizahl = Eizahl - message
+    io.emit("Eicounter", Eizahl)
+  })
+
+  socket.on("Eiabfrage", function (){
+    io.emit("Eicounter", Eizahl)
+  })
+}
+)
 
 mqttclient.on('message', function (topic, message) {
   //console.log(topic+": "+message.toString())
@@ -25,7 +38,6 @@ mqttclient.on('message', function (topic, message) {
         //console.log(JSON.parse(message.toString())) 
         Eizahl++
         //console.log(Eizahl)
-        
         io.emit("Eicounter", Eizahl)
       
   }
@@ -34,3 +46,4 @@ mqttclient.on('message', function (topic, message) {
 http.listen(port, function(){
   console.log('listening on *:' + port);
 });
+

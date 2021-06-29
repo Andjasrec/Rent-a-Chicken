@@ -505,13 +505,6 @@ body {
 
   /*transform: matrix(-1, 0, 0, 1, 0, 0);*/
 }
-.modal {width:50%;
-    margin:0 auto;
-    background-color:rgb(255, 255, 255);
-    position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 </style>

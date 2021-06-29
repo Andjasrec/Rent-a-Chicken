@@ -29,8 +29,12 @@ export default {
 </script>
 
 <style scoped>
+.row{
+    width: 90%;
+}
 .col{
-    margin-right: 32px;
+    padding: 0;
+    margin-right: 16px;
     margin-left:0cm;
 font-family: Airbnb Cereal App;
 font-style: normal;

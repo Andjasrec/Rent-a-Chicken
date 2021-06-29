@@ -4,11 +4,14 @@
       <div>
           <DeineEier></DeineEier>  
       </div> 
-        <div>
+      <div>
         <Hühner></Hühner>
-        </div>
+      </div>
 <div>
     <LiveCam></LiveCam>
+</div>
+<div>
+  <navi></navi>
 </div>
   </div>
 </template>
@@ -17,16 +20,25 @@
 import DeineEier from '../Startseite/DeineEier.vue'
 import Hühner from '../Startseite/Hühner.vue'
 import LiveCam from '../Startseite/LiveCam.vue'
+import Navi from './navi.vue'
 export default {
 components: {
     DeineEier,
     Hühner,
-    LiveCam
+    LiveCam,
+    Navi
 }
 }
+
 </script>
 
 <style>
+body{
+  margin-top: 23px;
+  margin-left: 18px;
+  margin-right: 18px;
+
+}
 .col{
     display: block;
     position: relative;
@@ -45,8 +57,10 @@ font-weight: 500;
 font-size: 24px;
 line-height: 31px;
 letter-spacing: 0.4px;
+margin-top: 36px;
 }
 h2{
+  margin-top: 24px;
   font-weight: normal;
 font-size: 18px;
 line-height: 23px;

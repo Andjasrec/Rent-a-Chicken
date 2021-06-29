@@ -1,9 +1,9 @@
 <template>
   <div>
       <h2>Live Cam</h2>
-      <b-button v-on:click="Live">LIVE</b-button>
-      <img src="@/assets/images/Chicks.jpg" class="image">
-      <Video v-if="button"></Video>
+      <div class="special"><b-button v-on:click="Live" >LIVE</b-button></div>
+      <img src="@/assets/images/Chicks.jpg" class="image" v-if="bild">
+      <Video v-if="video" class="video"></Video>
   </div> 
 </template>
 
@@ -12,13 +12,15 @@ import Video from '../Video.vue'
 export default {
     data (){
         return{
-            button : false
+            video: undefined,
+            bild: true,
         }
     },
     components: { Video },
     methods:{
     Live(){
-        this.button = true
+        this.bild = undefined
+        this.video = true
     }
 }
 }
@@ -26,6 +28,7 @@ export default {
 
 <style>
 .image{
+    position: relative;
     width: 377px;
 height: 210.44px;
     border-radius: 3px;
@@ -49,4 +52,11 @@ width: 64px;
 height: 36px;
   border: 0cm;
 }
+.special{
+    z-index: 1;
+left: 318px;
+top: 623px;
+    position: fixed;
+}
+
 </style>

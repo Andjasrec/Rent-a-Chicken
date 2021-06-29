@@ -8,6 +8,10 @@ import DeineEier from '../components/Startseite/DeineEier.vue'
 import Huehner from '../components/Startseite/Hühner.vue'
 import LiveCam from'../components/Startseite/LiveCam.vue'
 import Start from '../components/Startseite/Startseite.vue'
+import eins from '../components/Indruction/1.vue'
+import zwei from '../components/Indruction/2.vue'
+import drei from '../components/Indruction/3.vue'
+import vier from '../components/Indruction/4.vue'
 
 Vue.use(VueRouter)
 
@@ -54,7 +58,28 @@ const routes = [
   {
     path: '/Start',
     name: 'Start',
-    component: Start
+    component: Start,
+  },
+  {
+    path: '/1',
+    name: '1',
+    component: eins,
+    
+  },
+  {
+    path: '/2',
+    name: '2',
+    component: zwei,
+  },
+  {
+    path: '/3',
+    name: '3',
+    component: drei,
+  },
+  {
+    path: '/4',
+    name: '4',
+    component: vier,
   },
 ]
 
