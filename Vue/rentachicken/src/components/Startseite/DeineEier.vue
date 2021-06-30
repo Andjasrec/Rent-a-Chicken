@@ -16,14 +16,14 @@
               </b-col>
           </b-row>
           <b-row>
-              <b-col>
-                
+              <b-col class="nebenzahl">
+                Ø 1
               </b-col>
               <b-col class="wert">
                 {{Eizahl}}
               </b-col>
-              <b-col>
-
+              <b-col class="nebenzahl">
+                Ø 7
               </b-col>
           </b-row>
       </b-container>
@@ -117,7 +117,7 @@ color: #434343;
 }
 .modal{
   position: absolute;
-width: 378px;
+width: 380px;
 height: 247px;
 left: calc(50% - 378px/2 - 1px);
 top: calc(50% - 247px/2 - 20.5px);
@@ -138,14 +138,34 @@ text-align: center;
 letter-spacing: 0.15px;
 
 /* orange1 */
-
+justify-content: center;
 color: #E58F4D;
-width: 79px;
 height: 61px;
 margin-bottom: 11px;
 margin-top:11px;
 }
 .abstand{
   margin-top: 14px;
+}
+.nebenzahl{
+  justify-content: center;
+font-family: Airbnb Cereal App;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 20px;
+/* or 25% */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.15px;
+
+/* orange1 */
+color: #434343;
+
+height: 61px;
+margin-bottom: 11px;
+margin-top:11px;
+
 }
 </style>

@@ -14,7 +14,10 @@ export default {
 
 <style>
 .video{ 
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  border: 0;
 }
 </style>

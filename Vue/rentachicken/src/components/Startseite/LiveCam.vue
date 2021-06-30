@@ -1,9 +1,13 @@
 <template>
   <div>
       <h2>Live Cam</h2>
-      <div class="special"><b-button v-on:click="Live" >LIVE</b-button></div>
+      <div class="special">
+          <b-button v-on:click="Live" >
+              LIVE
+        </b-button>
+          </div>
       <img src="@/assets/images/Chicks.jpg" class="image" v-if="bild">
-      <Video v-if="video" class="video"></Video>
+      <Video v-if="video" class="video" allowfullscreen></Video>
   </div> 
 </template>
 

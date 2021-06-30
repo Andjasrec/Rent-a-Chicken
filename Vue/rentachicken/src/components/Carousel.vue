@@ -6,7 +6,7 @@
       <img src="@/assets/images/carla.jpg">
      <figure>
        <figcaption>
-            Charlotte
+            Carla
         </figcaption>
       </figure>
     </slide>
@@ -14,18 +14,33 @@
       <img src="@/assets/images/charlotte.jpg"/>
       <figure>
        <figcaption>
-            Antonia
+            Charlotte
         </figcaption>
       </figure>
     </slide>
     <slide :index="2">
-      <img src="@/assets/images/frieda.jpg"/>
+     <img src="@/assets/images/frieda.jpg">
+     <figure>
+       <figcaption>
+            Frieda
+        </figcaption>
+      </figure>
     </slide>
     <slide :index="3">
-      <img src="@/assets/images/mee-2179-2.jpg"/>
+     <img src="@/assets/images/Liselotte.jpg">
+     <figure>
+       <figcaption>
+            Liselotte
+        </figcaption>
+      </figure>
     </slide>
     <slide :index="4">
-      <img src="@/assets/images/carla.jpg"/>
+      <img src="@/assets/images/Dorothea.jpg">
+     <figure>
+       <figcaption>
+            Dorothea
+        </figcaption>
+      </figure>
     </slide>
   </carousel-3d>
   </div>
