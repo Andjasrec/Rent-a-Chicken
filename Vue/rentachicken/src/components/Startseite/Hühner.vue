@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .row{
-    width: 90%;
+    width: auto;
 }
 .col{
     padding: 0;
@@ -43,6 +43,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.4px;
 color: #4A7140;
+width: auto;
 }
 .nicht{
     color: #C4C4C4;

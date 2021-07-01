@@ -11,7 +11,6 @@
           </b-col>
         </b-row>
       </b-container>
-
       <div>
         <DeineEier v-on:changeBackgroundcolor="updateColor(event)"></DeineEier>
       </div>
@@ -22,7 +21,6 @@
         <LiveCam></LiveCam>
       </div>
     </div>
-
     <navi></navi>
   </div>
 </template>

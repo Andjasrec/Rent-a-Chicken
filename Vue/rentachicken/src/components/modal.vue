@@ -1,4 +1,5 @@
 <template>
+<div class="farbe">
 <div class="wrapper">
   <div class="h1">Abholung</div>
   <div class="h2">Wie viele Eier hast du abgeholt?</div>
@@ -8,6 +9,7 @@
   <button class="ABBRECHEN" v-on:click="abbrechen">ABBRECHEN</button>
   <button class="ABHOLEN" v-on:click="Eierabgeholt">ABHOLEN</button>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,10 +41,14 @@ import io from "socket.io-client";
   }
 </script>
 <style>
+.farbe{
+  background-color: grey; 
+  z-index: 500;
+}
 .wrapper{
 background: #ffffff;
 border-radius: 6px;
- z-index: 500;
+
 }
 .h1 {
   margin:18px;

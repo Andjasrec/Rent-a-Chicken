@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fläche">
       <h2>
           Deine Eier
       </h2>
@@ -116,13 +116,12 @@ color: #434343;
   justify-content: center;
 }
 .modal{
-  position: absolute;
+position: absolute;
 width: 380px;
 height: 247px;
 left: calc(50% - 378px/2 - 1px);
 top: calc(50% - 247px/2 - 20.5px);
 
-background: #FFFFFF;
 border-radius: 6px;
 }
 .wert{
