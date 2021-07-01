@@ -1,59 +1,57 @@
 <template>
   <div class="test">
-      <b-container>
-          <b-row>
-              <b-col>
-                  <img src="./../../assets/images/huhn.svg" alt="">
-              </b-col>
-              <b-col>
-                  <img src="./../../assets/images/wissen.svg" alt="">
-              </b-col>
-              <b-col>
-                  <img src="./../../assets/images/wecker.svg" alt="">
-              </b-col>
-          </b-row>
-          <b-row>
-              <b-col>Home</b-col>
-              <b-col>Wissen</b-col>
-              <b-col>Wecker</b-col>
-          </b-row>
-      </b-container>
+    <b-container>
+      <b-row>
+        <b-col>
+          <img src="./../../assets/images/huhn.svg" alt="" />
+        </b-col>
+        <b-col>
+          <img src="./../../assets/images/wissen.svg" alt="" />
+        </b-col>
+        <b-col>
+          <img src="./../../assets/images/wecker.svg" alt="" />
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>Home</b-col>
+        <b-col>Wissen</b-col>
+        <b-col>Wecker</b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
-.container{
-    z-index: 1;
-    bottom:0;
-    margin: none;
+.container {
+  z-index: 1;
+  bottom: 0;
+  margin: none;
 }
 
-.col{
-background: #F9F8F6;   
-    align-items: center;
-text-align: center;
- font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 20px;
-/* identical to box height, or 167% */
-letter-spacing: 0.15px;
-color: #C4C4C4;
+.col {
+  background: #f9f8f6;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  letter-spacing: 0.15px;
+  color: #c4c4c4;
 }
 .test {
-    position: fixed;
+  position: fixed;
   bottom: 0;
   width: 100%;
   overflow: hidden;
+  transform: translateY(-44px);
 }
-img{
-    margin-top: 11px;
+img {
+  margin-top: 11px;
 }
-
 </style>

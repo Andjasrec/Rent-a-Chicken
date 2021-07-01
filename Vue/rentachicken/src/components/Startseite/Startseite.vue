@@ -1,85 +1,96 @@
 <template>
-<div id="id1">
-  <div class="nix">
-      <h1>Rent a Chicken</h1>
+  <div id="id1">
+    <div class="nix">
+      <b-container>
+        <b-row>
+          <b-col>
+            <h1>Rent a Chicken</h1>
+          </b-col>
+          <b-col class="svg">
+            <img src="./../../assets/images/menu.svg" alt="" />
+          </b-col>
+        </b-row>
+      </b-container>
+
       <div>
-          <DeineEier
-          v-on:changeBackgroundcolor="updateColor(event)"
-          ></DeineEier>  
-      </div> 
+        <DeineEier v-on:changeBackgroundcolor="updateColor(event)"></DeineEier>
+      </div>
       <div>
         <Hühner></Hühner>
       </div>
-<div>
-    <LiveCam></LiveCam>
-</div>
+      <div>
+        <LiveCam></LiveCam>
+      </div>
+    </div>
+
+    <navi></navi>
   </div>
-  <div>
-  <navi></navi>
-</div>
-</div>
 </template>
 
 <script>
-import DeineEier from '../Startseite/DeineEier.vue'
-import Hühner from '../Startseite/Hühner.vue'
-import LiveCam from '../Startseite/LiveCam.vue'
-import Navi from './navi.vue'
+import DeineEier from "../Startseite/DeineEier.vue";
+import Hühner from "../Startseite/Hühner.vue";
+import LiveCam from "../Startseite/LiveCam.vue";
+import Navi from "./navi.vue";
 export default {
-components: {
+  components: {
     DeineEier,
     Hühner,
     LiveCam,
-    Navi
-},
-methods: {
-  updateColor: function(){
-    document.getElementById('id1').style="blue";
-}}
-}
-
+    Navi,
+  },
+  methods: {
+    updateColor: function () {
+      document.getElementById("id1").style = "blue";
+    },
+  },
+};
 </script>
 
 <style>
-body{
+body {
   margin: 0;
 }
-.col{
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+.col {
+  display: block;
+  position: relative;
+  width: 100%;
 }
 
 .row {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 h1 {
-color: #E58F4D;
-font-weight: 500;
-font-size: 24px;
-line-height: 31px;
-letter-spacing: 0.4px;
-margin-top: 36px;
+  color: #e58f4d;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.4px;
 }
-h2{
+h2 {
   margin-top: 24px;
   font-weight: normal;
-font-size: 18px;
-line-height: 23px;
-letter-spacing: 0.4px;
-color: #E58F4D;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+  color: #e58f4d;
 }
-.transparentdiv{
+.transparentdiv {
   visibility: none;
-    position: absolute;
-    top: -9999px;
+  position: absolute;
+  top: -9999px;
 }
-.nix{
-    margin-top: 23px;
+.nix {
+  margin-top: 23px;
   margin-left: 18px;
   margin-right: 18px;
+}
+.svg {
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 </style>
