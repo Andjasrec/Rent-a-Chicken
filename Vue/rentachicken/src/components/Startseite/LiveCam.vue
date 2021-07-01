@@ -1,13 +1,7 @@
 <template>
   <div>
       <h2>Live Cam</h2>
-      <div class="special">
-          <b-button v-on:click="Live" >
-              LIVE
-        </b-button>
-          </div>
-      <img src="@/assets/images/Chicks.jpg" class="image" v-if="bild">
-      <iframe v-if="video" class="video-container" src="https://www.youtube.com/embed/mljc6iEXKx0" title="YouTube video player"
+      <iframe class="video-container" src="https://www.youtube.com/embed/mljc6iEXKx0" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
 </template>
@@ -16,16 +10,9 @@
 export default {
     data (){
         return{
-            video: undefined,
-            bild: true,
+
         }
     },
-    methods:{
-    Live(){
-        this.bild = undefined
-        this.video = true
-    }
-}
 }
 </script>
 
@@ -63,9 +50,7 @@ top: 623px;
 }
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
     padding-top: 0;
-    height: 0;
     overflow: hidden;
     margin-bottom: 61px;
 }
