@@ -7,12 +7,12 @@
         </b-button>
           </div>
       <img src="@/assets/images/Chicks.jpg" class="image" v-if="bild">
-      <Video v-if="video" class="video" allowfullscreen></Video>
+      <iframe v-if="video" class="video-container" src="https://www.youtube.com/embed/mljc6iEXKx0" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
 </template>
 
 <script>
-import Video from '../Video.vue'
 export default {
     data (){
         return{
@@ -20,7 +20,6 @@ export default {
             bild: true,
         }
     },
-    components: { Video },
     methods:{
     Live(){
         this.bild = undefined
@@ -62,5 +61,22 @@ left: 318px;
 top: 623px;
     position: fixed;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 61px;
+}
 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>

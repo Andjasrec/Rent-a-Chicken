@@ -49,7 +49,6 @@ export default {};
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  transform: translateY(-44px);
 }
 img {
   margin-top: 11px;

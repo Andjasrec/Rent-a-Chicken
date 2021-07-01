@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Slider from '../components/slider.vue'
 import Carousel from '../components/Carousel.vue'
-import Video from '../components/Video.vue'
 import DeineEier from '../components/Startseite/DeineEier.vue'
 import Huehner from '../components/Startseite/Hühner.vue'
 import LiveCam from'../components/Startseite/LiveCam.vue'
@@ -28,11 +27,6 @@ const routes = [
     path: '/Carousel',
     name: 'Carousel',
     component: Carousel
-  },
-  {
-    path: '/Video',
-    name: 'Video',
-    component: Video
   },
   {
     path: '/DeineEier',
