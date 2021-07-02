@@ -3,12 +3,14 @@
 <b-container>
   <b-col>
     <b-row>
-      <h1> Willkommen bei Rent a Chicken</h1>
+      <h1>Ei Abholung</h1>
     </b-row>
   </b-col>
   <b-col>
     <b-row>
-      <img src="@/assets/images/illutyp.png"/>
+      <div class="größe">
+      <img src="@/assets/images/fahrrad.svg"/>
+      </div>
     </b-row>
   </b-col>
   <b-col>
@@ -58,10 +60,9 @@ height: auto;
 }
 h2{
   width: 303px;
-height: 48px;
   font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 line-height: 24px;
 /* or 171% */
 
@@ -70,13 +71,33 @@ letter-spacing: 0.15px;
 
 color: #FFFFFF;
 }
-.btn{
-    justify-content: center; 
-    align-items: center;
-    width: 118px;
-height: 36px;
+.btn{   
+  width:100%;
+  height: 36px;
+  left: 18px;
+  top: 276px;
+
+  background: #4a7140;
+  border-radius: 3px;
+  border: 0cm;
+
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  font-size: 18px;
+  line-height: 23px;
+
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .col{
   padding:0;
+}
+.größe{
+
+  height: 365px;
+  width: 303px;
 }
 </style>

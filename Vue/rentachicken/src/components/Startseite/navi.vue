@@ -13,7 +13,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <b-col>Home</b-col>
+        <b-col class="home">Home</b-col>
         <b-col>Wissen</b-col>
         <b-col>Wecker</b-col>
       </b-row>
@@ -52,5 +52,11 @@ export default {};
 }
 img {
   margin-top: 11px;
+}
+.home{
+  color: #4A7140;
+}
+.element.style {
+    background-image: none;
 }
 </style>

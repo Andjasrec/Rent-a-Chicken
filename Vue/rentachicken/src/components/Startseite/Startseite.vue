@@ -1,5 +1,5 @@
 <template>
-  <div id="id1">
+  <div>
     <div class="nix">
       <b-container>
         <b-row>
@@ -12,7 +12,7 @@
         </b-row>
       </b-container>
       <div>
-        <DeineEier v-on:changeBackgroundcolor="updateColor(event)"></DeineEier>
+        <DeineEier></DeineEier>
       </div>
       <div>
         <Hühner></Hühner>
@@ -38,9 +38,6 @@ export default {
     Navi,
   },
   methods: {
-    updateColor: function () {
-      document.getElementById("id1").style = "blue";
-    },
   },
 };
 </script>
@@ -73,11 +70,6 @@ h2 {
   line-height: 23px;
   letter-spacing: 0.4px;
   color: #e58f4d;
-}
-.transparentdiv {
-  visibility: none;
-  position: absolute;
-  top: -9999px;
 }
 .nix {
   margin-top: 23px;

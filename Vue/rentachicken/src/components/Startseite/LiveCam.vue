@@ -1,8 +1,7 @@
 <template>
   <div>
       <h2>Live Cam</h2>
-      <iframe class="video-container" src="https://www.youtube.com/embed/mljc6iEXKx0" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video-container" src="https://www.youtube.com/embed/iJQbSvO15vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
 </template>
 
@@ -49,10 +48,10 @@ top: 623px;
     position: fixed;
 }
 .video-container {
+    margin-bottom: 61px;
     position: relative;
     padding-top: 0;
     overflow: hidden;
-    margin-bottom: 61px;
 }
 
 .video-container iframe,
@@ -61,7 +60,15 @@ top: 623px;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+   
+}
+.ytp-title-channel-logo {
+    background-image: none;
+    
+    width: 0%;
+    height: 0%;
 }
 </style>

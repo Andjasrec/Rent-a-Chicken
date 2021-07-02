@@ -3,12 +3,14 @@
 <b-container>
   <b-col>
     <b-row>
-      <h1> Willkommen bei Rent a Chicken</h1>
+      <h1> Wissen</h1>
     </b-row>
   </b-col>
   <b-col>
     <b-row>
+      <div class="größe">
       <img src="@/assets/images/illuwissen.png"/>
+      </div>
     </b-row>
   </b-col>
   <b-col>
@@ -50,7 +52,7 @@ h2{
 height: 48px;
   font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 line-height: 24px;
 /* or 171% */
 
@@ -58,5 +60,10 @@ text-align: center;
 letter-spacing: 0.15px;
 
 color: #FFFFFF;
+}
+.größe{
+
+  height: 365px;
+  width: 303px;
 }
 </style>

@@ -50,6 +50,7 @@ export default {
 <style scoped>
 .slider-item{
     background-color:#E58F4D;
+    text-align: unset;
 }
 .sliderstyle{
 width:100vw;

@@ -8,7 +8,7 @@
   </b-col>
   <b-col>
     <b-row>
-      <img src="@/assets/images/illutyp.png"/>
+      <img src="@/assets/images/illutyp.svg"/>
     </b-row>
   </b-col>
   <b-col>
@@ -52,13 +52,13 @@ h2{
 height: 48px;
   font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 line-height: 24px;
 /* or 171% */
-
 text-align: center;
 letter-spacing: 0.15px;
 
 color: #FFFFFF;
 }
+
 </style>
