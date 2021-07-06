@@ -1,6 +1,5 @@
 <template>
   <div class="fläche">
-      {{Eizahl}}
       <h2>
           Deine Eier
       </h2>
@@ -103,7 +102,7 @@ mounted() {
   },
   watch: {
     Eizahl: function() {
-        this.counterInstance.update(this.Eizahl)
+        if(this.counterInstance != undefined) this.counterInstance.update(this.Eizahl)
       },
 }
 }
