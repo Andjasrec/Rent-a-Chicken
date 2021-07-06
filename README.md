@@ -1,2 +1,3 @@
 # Rent a Chicken
- Eier verkaufssystem mit 
+ Eier verkaufssystem mit einer AI
+ 
