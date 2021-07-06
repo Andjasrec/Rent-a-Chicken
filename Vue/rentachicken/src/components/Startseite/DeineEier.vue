@@ -1,6 +1,6 @@
 <template>
   <div class="fläche">
-      
+      {{Eizahl}}
       <h2>
           Deine Eier
       </h2>
@@ -55,9 +55,9 @@ export default {
   },
     data(){
         return{
-        
         Eizahl: '...',
         modaldata:false,
+
         delay: 1000,
         endVal: 0,
         options: {
@@ -82,7 +82,10 @@ mounted() {
     this.socket.emit('Eiabfrage')
     this.socket.on("Eicounter", (Eizahl) => {
       //console.log(Eizahl)
+
       this.Eizahl = Eizahl;
+      
+      //instance.update(this.Eizahl);
     });
   },
   methods:{
@@ -95,7 +98,13 @@ mounted() {
     updatemodal(){
       this.modaldata= undefined
     },
+  },
+  watch: {
+    Eizahl:  function(instance,) {
+      //console.log(instance)
+        instance.update(this.Eizahl);
   }
+}
 }
 </script>
 
