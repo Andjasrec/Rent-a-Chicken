@@ -57,6 +57,7 @@ export default {
         return{
         Eizahl: '...',
         modaldata:false,
+        counterInstance:undefined,
 
         delay: 1000,
         endVal: 0,
@@ -90,6 +91,7 @@ mounted() {
   },
   methods:{
     onReady: function(instance,) {
+        this.counterInstance = instance
         instance.update(this.Eizahl);
       },
     modalclick(){
@@ -100,10 +102,9 @@ mounted() {
     },
   },
   watch: {
-    Eizahl:  function(instance,) {
-      //console.log(instance)
-        instance.update(this.Eizahl);
-  }
+    Eizahl: function() {
+        this.counterInstance.update(this.Eizahl)
+      },
 }
 }
 </script>
