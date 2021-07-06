@@ -85,7 +85,6 @@ color: #FFFFFF;
   font-weight: normal;
   color: white;
   font-size: 18px;
-  line-height: 23px;
 
   letter-spacing: 0.4px;
   display: flex;

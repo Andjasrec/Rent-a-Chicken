@@ -62,6 +62,7 @@ h1 {
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.4px;
+  margin-bottom: 1px;
 }
 h2 {
   margin-top: 24px;

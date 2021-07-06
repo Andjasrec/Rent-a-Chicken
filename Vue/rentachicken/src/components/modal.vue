@@ -42,11 +42,26 @@ import io from "socket.io-client";
 </script>
 <style>
 .farbe{
-  background-color: grey; 
+  display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    padding-bottom:90px;
+    width:100%;
+    height:100%;
+    background-color: rgba(128, 128, 128, 0.7);
   z-index: 500;
 }
 .wrapper{
+  z-index: 500;
 background: #ffffff;
+border-radius: 6px;
+position: absolute;
+width: 380px;
+height: 247px;
+left: calc(50% - 378px/2 - 1px);
+top: calc(50% - 247px/2 - 20.5px);
+
 border-radius: 6px;
 
 }
