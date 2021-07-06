@@ -1,5 +1,6 @@
 <template>
   <div class="fläche">
+      
       <h2>
           Deine Eier
       </h2>
@@ -20,7 +21,12 @@
                 Ø 1
               </b-col>
               <b-col class="wert">
-                {{Eizahl}}
+              <ICountUp
+      :delay="delay"
+      :endVal="endVal"
+      :options="options"
+      @ready="onReady"
+      ></ICountUp>
               </b-col>
               <b-col class="nebenzahl">
                 Ø 7
@@ -30,7 +36,6 @@
       <br>
       <b-button
       v-on:click="modalclick" 
-      v-on:changeBackground="changeBackground"
       ref="my-modal">
           Abholen
       </b-button>
@@ -41,16 +46,34 @@
 <script>
 import io from "socket.io-client";
 import modal from '../modal.vue';
+import ICountUp from 'vue-countup-v2';
 
 export default {
-  components: { modal },
+  components: { 
+    modal,
+    ICountUp
+  },
     data(){
         return{
-            Eizahl: '...',
-            modaldata:false
+        
+        Eizahl: '...',
+        modaldata:false,
+        delay: 1000,
+        endVal: 0,
+        options: {
+          useEasing: true,
+          useGrouping: true,
+          separator: ',',
+          decimal: '.',
+          prefix: '',
+          suffix: ''
+        },
         }
     },
 mounted() {
+
+
+
     this.modaldata= false
     this.socket = io("http://localhost:3333");
     this.socket.on("connect", () => {
@@ -63,15 +86,15 @@ mounted() {
     });
   },
   methods:{
+    onReady: function(instance,) {
+        instance.update(this.Eizahl);
+      },
     modalclick(){
       this.modaldata = true
     },
     updatemodal(){
       this.modaldata= undefined
     },
-    changeBackground(){
-      this.$emit('changeBackgroundcolor')
-    }
   }
 }
 </script>
@@ -114,8 +137,6 @@ color: #434343;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.modal{
 }
 .wert{
 font-family: Airbnb Cereal App;

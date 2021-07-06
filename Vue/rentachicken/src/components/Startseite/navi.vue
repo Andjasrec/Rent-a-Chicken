@@ -56,7 +56,4 @@ img {
 .home{
   color: #4A7140;
 }
-.element.style {
-    background-image: none;
-}
 </style>
