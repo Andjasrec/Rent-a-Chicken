@@ -2,7 +2,7 @@
   <div>
       <h2>Live Cam</h2>
       <div class="video-container">
-      <iframe class="video" src="https://www.youtube.com/embed/iJQbSvO15vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" src="https://www.youtube.com/embed/jBlH6ckHEwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
   </div> 
 </template>
